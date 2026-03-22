@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --stale-900: #1f314f;
+  --stale-500: #68778d;
+  --stale-300: #d5e1ef;
+  --white: #fff;
+  --font-outfit-regular: 400;
+  --font-outfit-bold: 700;
+  --space-40: 40px;
+  --space-24: 24px;
+  --space-16: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  background-color: var(--stale-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.qr-container {
+  width: 320px;
+  height: 500px;
+  background: var(--white);
+  padding: var(--space-16) var(--space-16) var(--space-40) var(--space-16);
+  border-radius: 12px;
+  text-align: center;
+}
+.qr-code {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: var(--space-24);
+}
+.qr-container h2 {
+  color: var(--stale-900);
+  font-size: var(--space-24);
+}
+.qr-container p {
+  max-width: 258px;
+  font-size: var(--space-16);
+  color: var(--stale-500);
+  margin: var(--space-16) auto 0;
+  line-height: var(--space-24);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
